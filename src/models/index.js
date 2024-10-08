@@ -20,4 +20,5 @@ db.connect = () => {
 };
 
 mongoose.set("debug", true);
+db.xyz = require("./xyz.model.js")(mongoose);
 module.exports = db;
